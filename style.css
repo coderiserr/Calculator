@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans','sans-serif';
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center(0, 0, 0);
+    justify-content: center;
+    
+
+}
+.calculator{
+    background-color: rgb(155, 155, 183);
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+ form input{
+    border :0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #f6f6fe,-6px -6px 12px #a4a3b0;
+    background: transparent;
+    box-sizing: 20px;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+ form input:hover{
+    /* content: '';
+    width: 5em;
+    height: 3em;
+    border-radius: 30em; */
+    position:relative;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right
+    ,#701f10 0%,#94483c 100%);
+    transition: 1s ease;
+    display:inline-block;
+    z-index: 1;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin:  20px 0;
+   
+
+}
+form .display input{
+    text-align:  right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none; 
+    box-shadow: 6px 6px 12px #f6f6fe,-6px -6px 12px #a4a3b0;
+}
+ form input.equal  {
+    width: 145px;
+}
+
+
+form .btn:hover::before{
+    width: 9em;
+}
+.form input .btn{
+    color: orangered;
+}
+
+/* .calculator form input{
+    border :0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    box-sizing: 20px;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 10px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+} */
+
